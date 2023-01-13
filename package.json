@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": ["defaults"],
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
