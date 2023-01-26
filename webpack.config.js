@@ -1,8 +1,8 @@
 const path = require("path");
-const crypto = require("crypto")
+const crypto = require("crypto");
 
 function md5() {
-    return crypto.createHash('md5');
+  return crypto.createHash("md5");
 }
 
 module.exports = {
@@ -14,6 +14,14 @@ module.exports = {
         exclude: /node_modules/,
         use: ["babel-loader"],
       },
+      {
+        test: /\.(svg|png)$/,
+        type: "asset/inline",
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   resolve: {
@@ -23,13 +31,13 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     filename: "bundle.js",
     // Default hash function uses WebAssembly, which is unsupported on iOS node
-    hashFunction: md5
+    hashFunction: md5,
   },
-  target: 'web',
+  target: "web",
   devServer: {
-    contentBase: ['./dist'],
+    contentBase: ["./dist"],
     hot: true,
-    publicPath: '/dist',
+    publicPath: "/dist",
     watchOptions: {
       // Use poll for watch because the default implementation open too many file descriptors
       poll: 1000,

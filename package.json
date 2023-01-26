@@ -9,7 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "browserslist": ["defaults"],
+  "browserslist": [
+    "defaults"
+  ],
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
@@ -19,7 +21,9 @@
     "@babel/preset-env": "^7.13.9",
     "@babel/preset-react": "^7.12.13",
     "babel-loader": "^8.2.2",
+    "css-loader": "^6.7.3",
     "react-hot-loader": "^4.13.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.24.3",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
