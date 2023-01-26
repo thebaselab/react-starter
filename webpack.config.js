@@ -25,6 +25,7 @@ module.exports = {
     // Default hash function uses WebAssembly, which is unsupported on iOS node
     hashFunction: md5
   },
+  target: 'web',
   devServer: {
     contentBase: ['./dist'],
     hot: true,
