@@ -10,4 +10,4 @@ npm run start
 
 To preview the project, open Safari in split view and visit `localhost:3000`.
 
-<img width="1080" alt="image" src="https://user-images.githubusercontent.com/38398443/206852444-a35c32b8-7684-4a61-9d7e-79b7f8080d6a.png">
+<img width="1080" alt="image" src="https://user-images.githubusercontent.com/38398443/214802398-b18e2ffb-8c10-4ccd-96f3-dce76350c697.png">
